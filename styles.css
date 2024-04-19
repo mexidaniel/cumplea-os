@@ -1,0 +1,412 @@
+@keyframes vibrar {
+  0%, 10%, 90%, 100% { transform: translateX(0); }
+  2.5%, 7.5% { transform: translateX(-5px); }
+  5% { transform: translateX(5px); }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.vibrate {
+  animation: vibrate 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+.slide-down {
+  animation: slideDown 0.5s ease forwards;
+}
+
+
+
+body {
+    background:linear-gradient(to bottom, black 50%, #000038 );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    color:white;
+    padding: 5px;
+    border-radius: 10px;
+  
+    
+  }
+  
+
+
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+
+  #countdown2 {
+
+    font-size: 80%; /* Tamaño de la fuente ajustado */
+    font-family: 'Arial', sans-serif;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 15px; /* Espaciado superior ajustado */
+    font-family: 'Rock Salt', cursive;
+    background:  #000020;
+  color: #37448D;
+   
+   
+  }
+
+ 
+
+  .number {
+    color: #00FFAD; /* Color para los números */
+  }
+
+  /* Puedes ajustar este color según tu preferencia para las letras */
+ 
+
+  h4 {
+    font-family: "Ranchers", sans-serif;
+    text-align: center;
+   
+  }
+
+  #button-addon2 {
+    background-color: black;
+ 
+    color: #006EBA; /* Para asegurar que el texto sea visible en el fondo de color */
+    border-color: #006EBA; /* Si deseas aplicar un borde del mismo color */
+  }
+
+  #imagen1,
+  #imagen2 {
+    display: none;
+    width: 70%;
+  }
+
+
+  .btn-listo {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+ 
+    color: #006EBA; /* Para asegurar que el texto sea visible en el fondo de color */
+    border-color: #006EBA; 
+}
+
+
+
+
+#myForm {
+    display: none;
+  }
+#telefonoborrado{
+  display: none;
+}
+
+  #form20 {
+    background: radial-gradient(circle at top left, #000000, #0A0A0A);
+    box-shadow: 0 0 10px rgba(43, 43, 42, 0.5); /* Ajusta la intensidad del resplandor según sea necesario */
+    border: 2px solid #0A0A0A; /* Añade un borde con color #3A3A3A */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    color:#666666;
+  }
+
+  #titleform {
+    color: #006EBA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block; /* Puedes agregar esta línea si el elemento es en línea y la sombra no se muestra correctamente */
+    text-align: center;  
+}
+
+#titleform2 {
+padding-top: 15px;
+
+
+}
+
+
+
+
+#rocklineup {
+  color: #00FFAD;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+
+}
+
+
+
+.white-square {
+  min-height: 50px;/* Ajusta la altura para mantener la proporción deseada */
+  background:linear-gradient(to bottom, #000038 10%, #2D418E );
+  margin: 0; 
+  color: white; 
+  margin-top: -1px;
+  
+
+  
+}
+
+#rocklineup {
+  color: #00FFAD;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 3%;
+  padding-bottom: 2.5%;
+
+}
+
+.white-square2 {
+  min-height: 50px;/* Ajusta la altura para mantener la proporción deseada */
+
+  background:linear-gradient(to bottom, #2D418E, #A02A82 60%);
+  margin-top: -1px; 
+  color: white; 
+  font-size: 1px;
+  
+}
+
+
+
+
+
+
+
+#perreolineup {
+  color: #00FFAD;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 2.5%;
+  margin-top: -10px;
+
+  
+}
+
+
+
+.custom-container {
+  max-width: 600px; /* Ajusta esto según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.container-sm {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-left: -30%;
+}
+
+
+.btn-stage {
+  background-color: black;
+  color: #00E9EA; /* Color del texto */
+  border: 1px solid #00E9EA; /* Borde del botón */
+  padding: 10px 20px; /* Espaciado interno para que el botón sea más grande */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Elimina subrayados en caso de usar <a> */
+  display: inline-block; /* Permite que se apliquen los márgenes */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 4px 2px; 
+  font-family: "Ranchers", sans-serif;
+  
+  
+  
+
+}
+
+
+#btnRandom{
+  width: 45 px; /* Ancho de tu imagen */
+  height: 45px; /* Altura de tu imagen */
+margin-right: 5px;
+  cursor: pointer; /* Cambia el cursor a pointer para indicar que es un botón */
+}
+
+
+
+
+
+#cierre {
+
+margin-top: -1px;
+  }
+
+#cierreg {
+
+display: none;
+margin-top: -1px;
+}
+
+.image-container2 {
+
+  display: none;
+  z-index: 1;
+
+  }
+
+
+ 
+  .text-gradient {
+    color: white; 
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  
+  }
+  .text-gradient2 {
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    color: white; /* Color del texto */
+    
+  }
+  
+
+  .text-gradient3 {
+    color: white;
+    font-size: clamp(0.6rem, 0.8vw, 1rem);
+    margin-top: 8px;
+    
+    
+  }
+  
+  .image-container {
+    position: relative;
+}
+
+#rayo1 {
+    width: 20%;
+    top: 50%;
+    left: 10%;
+    animation: vibrar 4s ease-in-out infinite;
+}
+
+#rayo2 {
+    width: 20%;
+    top: 52%;
+    right: 10%;
+    animation: vibrar 4s ease-in-out infinite;
+}
+
+#confirmacion {
+  color: #0070BC;
+  font-family: "Ranchers", sans-serif;
+}
+
+#confirmacion2 {
+ 
+  
+  font-family: "Impact", sans-serif;
+  font-size: 3px;
+}
+
+#confirmacion3 {
+ 
+  color: #0070BC;
+}
+
+.custom-border {
+  border: 2px solid white; /* Cambia el color y el grosor del borde según prefieras */
+  border-radius: 10px; /* Opcional: si deseas bordes redondeados */
+  background: linear-gradient(to bottom, white 50%, #BFC1C1 );
+}
+
+#form-group {
+  position: relative; /* Contexto de posicionamiento para los hijos */
+  display: block; 
+  margin-bottom: 0;
+  margin-top: 0;
+  
+}
+
+
+
+
+#divnombre1 {
+  display: flex; /* Usar flexbox */
+  justify-content: center; /* Centrar contenido horizontalmente */
+  align-items: center; /* Centrar contenido verticalmente */
+  text-align: center; /* Asegurar que el texto esté centrado */
+  color: white;
+  font-size: clamp(0.7rem, 2vw, 0.7rem);  /* clamp(0.7rem, 2vw, 1.2rem); */
+  line-height: 90%;
+  top: 58.9%; left: 25%;
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  font-family: "Ranchers", sans-serif;
+  position: relative; /* Asumiendo que quieres posicionar el div específicamente */
+  width: 20%;
+  height: 10%;
+  z-index: 2;
+}
+
+#nombrefinal {
+  display: none
+
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background:  #000020;
+  color: #37448D;
+  padding: 20px 0;
+  
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+}
+
+.website p {
+  margin: 0;
+}
+
+.website a {
+  color: #37448D;
+  text-decoration: none;
+}
+
+.website a:hover {
+  text-decoration: underline;
+}
+
+
+#lineup { 
+
+  border: 1px solid #A8A8A8; /* Borde del botón */ 
+  box-shadow: 0 0 10px rgba(43, 43, 42, 0.5);
+
+
+ }

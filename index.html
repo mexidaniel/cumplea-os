@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TomorrowMex</title>
+  <!-- Agrega la referencia a Bootstrap (opcional) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rock+Salt&family=RocknRoll+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/spinjs/2.3.2/spin.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <div id="countdown2" >
+   
+  <div  class="text-center mt-3">
+    <h4 style="margin-bottom: 0;">Save the date:</h4>
+  </div>
+  
+
+  <div id="countdown" class="container-fluid vh-50 d-flex align-items-center justify-content-center">
+    
+  </div>
+
+</div>
+  <div class="container mt-2">
+
+    <div class="container custom-container">
+  <img src="./img/header-04.png " class="img-fluid rounded mx-auto d-block" style="width: 110%;" alt="Header Image">
+    </div>
+  </div>
+    
+
+    <div class="container custom-container">
+      <div class="container custom-container" id='telefonogrup'>
+        <form>
+          <div class="input-group" id="telefonoInput2"  >
+            <input type="text" class="form-control" id="telefonoInput" placeholder="Su número de teléfono" aria-label="Ingresa tu espacio aquí" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2">Comprobar</button>
+            </div>
+          </div>
+      <div class="container custom-container" id="form20" style="display: none;">
+        <h4 id="titleform" style="margin-bottom: 0;">Formulario Exclusivo para Artistas:</h4>
+        <br><br>
+          <div class="form-group" style="display: none;">
+            <p id="telefonoborrado"> Su teléfono registrado es: <span id="telefonoRegistrado"></span></p>
+            <label for="nombre">Nombre, apodo o nombre artístico:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="">
+          </div>
+      
+      
+          <div class="form-group" style="display: none;">
+            
+            <label>¿En cuál Stage quiere estar?:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="vipOption" id="vipRock" value="rock">
+              <label class="form-check-label" for="vipRock">
+                Team Rock
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="vipOption" id="vipPerreo" value="perreo">
+              <label class="form-check-label" for="vipPerreo">
+                Team Perreo
+              </label>
+            </div>
+          </div>
+          <div class="container custom-container"> 
+            <div id= 'divnombre1' class="d-flex justify-content-center align-items-center" style="position: absolute;"><p id="nombrefinal" ></p></div>
+          <div class="form-group" id="form-group" style="display: none;">
+            <img src="./img/backstage0.png" class="img-fluid" alt="Imagen 1" id="imagen1">
+          </div>      
+          <div class="form-group" id="form-group" style="display: none;">
+            <img src="./img/backstage1.png" class="img-fluid" alt="Imagen 2" id="imagen2" >
+            
+          </div>
+          
+        </div>
+      <br>
+      <button type="button" id= "button-addon2" class="btn btn-success btn-listo" onclick="validarFormulario()">Añadirme al line up</button>
+        </div> 
+        </form>
+      </div>
+      
+    </div>
+    <br>
+    <br>
+    
+   
+    <div class="container custom-container" id="lineup">
+      <h4 id="titleform2" style="margin-bottom: 0;">Line up:</h4>
+      <div class="image-container" style="position: relative;">
+          <img id='open1' src="./img/Lineup1.png" style="width: 100%; margin: 0; height: auto;">
+          <img id='rayo1' class="rayo" src="./img/rayo1.png" style="position: absolute;">
+          <img id='rayo2' class="rayo" src="./img/rayo2.png" style="position: absolute;">
+      </div>
+      <div class="image-container2" style="position: relative;">
+          <img id='open2' src="./img/Lineup12.png" style="width: 100%; margin: 0; height: auto;">
+          <img id='rayo1' class="rayo" src="./img/rayo1.png" style="position: absolute;">
+          <img id='rayo2' class="rayo" src="./img/rayo2.png" style="position: absolute;">
+          
+      </div>
+      <div class="white-square"><h4 id="rocklineup" style="margin: 0;">✩ Stage Rock ✩</h4></div> 
+ 
+      <div class="white-square2"><h4 id="perreolineup" style="margin: 0;">☼ Stage Perreo ☼</h4></div> 
+      <img id='cierre' src="./img/Lineup2.png" style="width: 100%; height: auto;">
+      <img id='cierreg' src="./img/cierreg.png" style="width: 100%; height: auto;">
+   
+    </div>
+
+    <div class="container custom-container">
+      
+      <br>
+      <img src="./img/random.png" class="img-fluid" alt="Imagen 2" id="btnRandom" >
+      <button type="button" id="btnGuitarras" class="btn-stage"> Stage Rock ✩</button>
+      <button type="button" id="btnBreeze" class="btn-stage"> Stage Perreo ☼</button>
+      
+       <!-- <button type="button" id="btnRandom" class="btn-stage">sss</button>-->
+
+
+    </div>
+    <br>
+    
+    <footer>
+      <div class="container" id="footer">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/daniel.gonzalez.9843"><img src="img/face.png" alt="Facebook"></a>
+          <a href="#"><img src="img/tic.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/mexi_daniel/"><img src="img/ig.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/in/daniel-gonzalez-b812b8167/"><img src="img/link.png" alt="LinkedIn"></a>
+        </div>
+        <div class="website">
+          <p><a href="https://www.tomorrowmex.com">Tomorrowmex.com ©</a></p>
+        </div>
+      </div>
+    </footer>
+
+   
+   <!--
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Teléfono</th>
+          <th>Nombre</th>
+          <th>Stage</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      
+      </tbody>
+    </table>
+  </div>
+ -->
+  <!-- Agrega la referencia a Bootstrap (opcional) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Agrega el script para obtener y mostrar los datos -->
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/telefono.js"></script>
+  <script src="./js/lineup.js"></script>
+  <script src="./js/botones.js"></script>
+  <script src="./js/random.js"></script>
+
+
+  
+</body>
+
+</html>

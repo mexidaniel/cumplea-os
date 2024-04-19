@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TomorrowMex</title>
+  <!-- Agrega la referencia a Bootstrap (opcional) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Rock+Salt&family=RocknRoll+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/spinjs/2.3.2/spin.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <div id="countdown2" >
+   
+  <div  class="text-center mt-3">
+    <h4 style="margin-bottom: 0;">Save the date:</h4>
+  </div>
+  
+
+  <div id="countdown" class="container-fluid vh-50 d-flex align-items-center justify-content-center">
+    
+  </div>
+
+</div>
+  <div class="container mt-2">
+
+    <div class="container custom-container">
+  <img src="./img/header-04.png " class="img-fluid rounded mx-auto d-block" style="width: 110%;" alt="Header Image">
+    </div>
+  </div>
+    
+
+    <div class="container custom-container">
+      <div class="container custom-container" id='telefonogrup'>
+
+        <form>
+          <p>Agregar o borrar número de teléfono:</p>
+          <form class="input-group" id="telefonoInput2"  >
+
+            
+            <div class="input-group-append">
+              
+              <input type="text" id="inputTelefono1" placeholder="Número de Teléfono" class="form-control">
+              <div class="buttons-container">
+              <button class="btn btn-primary" type="button" id="button-addonAgregar">Agregar</button>
+              <button class="btn btn-primary" type="button" id="button-addonBorrar">Borrar</button>
+            </div> </div></form> 
+<br> 
+
+        <form>
+          <div class="input-group" id="telefonoInput2"  >
+            <input type="text" class="form-control" id="telefonoInput" placeholder="agregar teléfono" aria-label="Ingresa tu espacio aquí" aria-describedby="button-addon2">
+            <div class="input-group-append">
+             
+              <button class="btn btn-primary" type="button" id="button-addon2">Comprobar</button>
+            </div>
+          </div>
+      
+       
+         
+        </form>
+      </div>
+      
+   
+
+   
+   
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Teléfono</th>
+          <th>Nombre</th>
+          <th>Stage</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      
+      </tbody>
+    </table>
+  </div>
+ 
+  <!-- Agrega la referencia a Bootstrap (opcional) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Agrega el script para obtener y mostrar los datos -->
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/admi.js"></script>
+  <script src="./js/lineup.js"></script>
+  <script src="./js/botones.js"></script>
+  <script src="./js/random.js"></script>
+  
+
+
+  
+</body>
+
+</html>
