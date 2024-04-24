@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 async function fetchNombresPorVip(vip) {
     try {
         console.log(`Iniciando la petición fetch para ${vip}`);
-        const response = await fetch(`http://localhost:3000/getNombresPorVip/${vip}`);
+        const response = await fetch(`http://tomorrowmex.com/getNombresPorVip/${vip}`);
         console.log(`Respuesta recibida para ${vip}:`, response);
         if (!response.ok) {
             throw new Error(`Error en la respuesta para ${vip}: ${response.statusText}`);
