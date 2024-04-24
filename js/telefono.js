@@ -188,7 +188,7 @@ Swal.fire({
   },
 });
 
-fetch(`http://localhost:3000/checkTelefono/${telefono}`)
+fetch(`http://tomorrowmex.com/checkTelefono/${telefono}`)
 .then(response => response.json())
 .then(data => {
   // Cierra el mensaje de carga
