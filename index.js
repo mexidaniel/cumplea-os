@@ -8,9 +8,9 @@ app.use(bodyParser.json());
 
 // Configurar CORS
 app.use(cors({
-  origin: 'http://127.0.0.1:5500', // Permite solicitudes solo desde este origen
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
-  allowedHeaders: ['Content-Type'], // Encabezados permitidos
+  origin: ['http://tomorrowmex.com', 'http://127.0.0.1:5500'], // Añade otros dominios según sea necesario
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
 }));
 
 const config = {
