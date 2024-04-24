@@ -87,7 +87,7 @@ function validarFormulario() {
     });
 
 
-    fetch('http://localhost:3000/updateUsuario', {
+   fetch(`http://tomorrowmex.com/updateUsuario`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
