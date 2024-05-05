@@ -63,7 +63,7 @@ function validarFormulario() {
       icon: 'error',
       html: '<span><h1 id=confirmacion >Información incompleta.</h1></span><span><h2>'
       + '¿En qué estamos?' +'</h2></span>', 
-      confirmButtonColor: '#006EBA',
+      confirmButtonColor: '#21C0F6',
       confirmButtonText: 'Ay ',
       allowOutsideClick: false, 
       customClass: {
@@ -87,7 +87,7 @@ function validarFormulario() {
     });
 
 
-   fetch(`http://tomorrowmex.com/updateUsuario`, {
+    fetch('http://localhost:3000/updateUsuario', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
         icon: 'warning',
         html: '<span><h1 id=confirmacion >¡Campo Vacio!</h1></span><span><h2>'
         + '¿y el teléfono papi?' +'</h2></span>', 
-        confirmButtonColor: '#006EBA',
+        confirmButtonColor: '#21C0F6',
         confirmButtonText: 'Ay perdón', 
         allowOutsideClick: false, 
         customClass: {
@@ -188,7 +188,7 @@ Swal.fire({
   },
 });
 
-fetch(`http://tomorrowmex.com/checkTelefono/${telefono}`)
+fetch(`http://localhost:3000/checkTelefono/${telefono}`)
 .then(response => response.json())
 .then(data => {
   // Cierra el mensaje de carga
@@ -200,7 +200,7 @@ fetch(`http://tomorrowmex.com/checkTelefono/${telefono}`)
         icon: 'info',
         html: '<span><h1 id=confirmacion >Im sorry</h1></span><span><h2>'
         + 'Ya estás registrado en el line up' +'</h2></span>', 
-        confirmButtonColor: '#006EBA',
+        confirmButtonColor: '#21C0F6',
         confirmButtonText: 'Mirá si', 
         allowOutsideClick: false,
         customClass: {

@@ -5,10 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+const API_BASE_URL = 'http://localhost:3000';
+
+
 async function fetchNombresPorVip(vip) {
     try {
         console.log(`Iniciando la petición fetch para ${vip}`);
-        const response = await fetch(`http://tomorrowmex.com/getNombresPorVip/${vip}`);
+        const response = await fetch(`${API_BASE_URL}/getNombresPorVip/${vip}`);
         console.log(`Respuesta recibida para ${vip}:`, response);
         if (!response.ok) {
             throw new Error(`Error en la respuesta para ${vip}: ${response.statusText}`);

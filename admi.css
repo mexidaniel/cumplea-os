@@ -3,7 +3,10 @@ margin-top: 15px;
     background-color: green;
 
 }
+p {
 
+    color: black
+}
 #button-addonBorrar {
     margin-top: 15px;
         background-color: red;
@@ -44,6 +47,7 @@ margin-top: 15px;
         text-align: left;
         padding: 8px;
         border-bottom: 1px solid #ddd;
+        background: #49A49D;
     }
     
     .table th {

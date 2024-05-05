@@ -7,21 +7,11 @@ app.use(bodyParser.json());
 
 
 // Configurar CORS
-const corsOptions = {
-  origin: function (origin, callback) {
-    // Permitir solicitudes sin `origin` (como Postman o Node) o de dominios específicos
-    const allowedOrigins = ['http://127.0.0.1:5500', 'http://tomorrowmex.com'];
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type']
-};
-
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: 'http://127.0.0.1:5500', // Permite solicitudes solo desde este origen
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
+  allowedHeaders: ['Content-Type'], // Encabezados permitidos
+}));
 
 const config = {
   server: 'sql.bsite.net\\MSSQL2016',
